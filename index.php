@@ -42,7 +42,7 @@ function connect_database(){
 </head>
 <body>
     <div class=container>
-        <div class=row>
+        <div class="row justify-content-between mt-3">
     <img src="..." class="img-fluid rounded-start" alt="...">
 <div class="card mb-3" style="max-width: 540px;">
   <div class="row g-0">
@@ -53,7 +53,7 @@ function connect_database(){
       <div class="card-body">
         <h5 class="card-title">Card title</h5>
         <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-        <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+        <p class="card-text">fgdsrxs</p>
       </div>
     </div>
   </div>
