@@ -20,8 +20,8 @@ require_once('header.php');
                         <p>Year : <?php echo $result['disc_year'];?></p>
                         <p>Genre : <?php echo $result['disc_genre'];?></p>
                     </div>
-                <form action="page_update.php" method='POST' class='col-6 mt-5'>
-                    <button type='SUBMIT' CLASS='btn btn-danger'>SUPPRIMER</button>
+                <form action="page_delete.php" method='GET' class='col-6 mt-5'>
+                <button type='SUBMIT' name='delete' CLASS='btn btn-danger' value='<?php echo $result['disc_id']; ?>'>SUPPRIMER</button>
                 </form>
                 <form action="page_update.php" method='GET' class='col-6 mt-5'>
                     <button type='SUBMIT' name='modif' CLASS='btn btn-warning' value='<?php echo $result['disc_id']; ?>'>modifier</button>

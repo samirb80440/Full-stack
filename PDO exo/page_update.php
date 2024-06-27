@@ -24,7 +24,7 @@ require_once('header.php')
             <label class='mt-2' for='price'>Prix :</label><br><input type='text' class='mt-2' id='price' name='ajoutprix' value='<?php echo $result['disc_price']; ?>' required><br>
 
             <label class='mt-2' for='jaquette'>Jaquette d'album :</label><br><input type='file' class='mt-2' id='jaquette' name='ajoutimage'><br>
-            <img src='../../pictures/<?php echo $result['disc_picture']; ?>' alt='<?php echo $result['disc_title']; ?>' style="max-width: 540px" class='mt-2 img-fluid'><br>
+            <img src='/pictures/<?php echo $result['disc_picture']; ?>' alt='<?php echo $result['disc_title']; ?>' style="max-width: 540px" class='mt-2 img-fluid'><br>
 
             <button type='submit' name='modif' value='<?php echo $_GET['modif']; ?>' class='btn btn-primary mt-2'>Ajouter</button>
         </form>

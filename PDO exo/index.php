@@ -23,7 +23,7 @@
                 echo '<div class="card mb-3 mx-3 col-5" id="'.$row['disc_id'].'"style="max-width: 540px;">
             <div class="row g-0">
                 <div class="col-md-4">
-                <img src="../../pictures/'.$row['disc_picture'].'" class="img-fluid rounded-start" alt="'.$row['disc_title'].'">
+                <img src="pictures/'.$row['disc_picture'].'" class="img-fluid rounded-start" alt="'.$row['disc_title'].'">
                 </div>
                 <div class="col-md-8">
                 <div class="card-body">

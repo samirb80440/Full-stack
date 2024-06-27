@@ -10,7 +10,7 @@ require_once('header.php');
                 ?>
             <div class='container'>
                 <div class='row justify-content-center'>
-                    <img src="../../pictures/<?php echo $result['disc_picture'];?>" class="img-fluid rounded-start col-6">
+                    <img src="pictures/<?php echo $result['disc_picture'];?>" class="img-fluid rounded-start col-6">
                     <div class="col-6">
                         <h2><?php echo $result['disc_title'];?></h2>
                         <p>Artist : <?php echo $result['artist_name'];?></p>
