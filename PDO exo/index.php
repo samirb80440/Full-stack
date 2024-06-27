@@ -5,7 +5,7 @@
 <body>
     <div class='container'>
         <div class='row justify-content-center'>
-            <div class='h-3 col-6'>Tout les albums</div><button type='button' class='btn btn-primary col-5' style="max-width: 240px;" onclick='window.location="ajoutdisc.php"'>ajout<button>
+            <div class='h-3 col-6'>Tout les albums</div><button type='button' class='btn btn-primary col-5' style="max-width: 240px;" onclick='window.location="ajoutdisc.php"'>ajout</button>
         </div>
 
         <form method='GET' action='detailsdisc.php' class='row justify-content-center'>
