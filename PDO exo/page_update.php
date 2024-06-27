@@ -14,7 +14,7 @@ require_once('header.php')
 
     <div class='container'>
      
-        <form action='script_update.php' method='POST' enctype="multipart/form-data" class='row justify-content-center'>
+        <form action='scrip_update.php' method='POST' enctype="multipart/form-data" class='row justify-content-center'>
     
             <label class='mt-2' for='title'>Titre :</label><br><input type='text' class='mt-2' id='title' name='ajouttitle' value='<?php echo $result['disc_title']; ?>' required><br>
             <label class='mt-2' for='artiste'>Artiste :</label><br><input type='text' class='mt-2' id='artiste' name='ajoutartist' value='<?php echo $result['artist_name']; ?>' required><br>

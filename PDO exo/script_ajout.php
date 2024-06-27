@@ -75,4 +75,6 @@ $stmt->bindValue(':label', $_POST['ajoutlabel']);
 $stmt->bindValue(':genre', $_POST['ajoutgenre']); 
 $stmt->bindParam(':artist_id', $artist_id);//bind param permet de transmettre une variable php en parametre utile pour mettre un int
 $stmt->execute();}
+
+header('Location:index.php');
 ?>

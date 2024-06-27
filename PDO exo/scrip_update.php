@@ -73,7 +73,7 @@ if ($_FILES['ajoutimage']['name'] != null) {
 
     // Définition du chemin de destination sécurisé
 
-    $destination = '../../pictures/' . uniqid() . '_' . $name;
+    $destination = 'pictures/' . uniqid() . '_' . $name;
 
 
     // Déplacement du fichier uploadé
@@ -127,5 +127,5 @@ try {
     echo 'Erreur lors de l\'exécution de la requête : ' . $e->getMessage();
 
 }
-    header('Location:index.php')
+    header('Location:index.php');
 ?>
