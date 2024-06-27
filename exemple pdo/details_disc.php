@@ -23,7 +23,7 @@
 <body>
     <form method=GET><input type=text name=disc_id ></form>
     Disc N° <?= $disc->disc_id ?>
-    Disc name <?= $disc->disc_title ?>
+    Disc title <?= $disc->disc_title ?>
     Disc year <?= $disc->disc_year ?>
 </body>
 </html>
