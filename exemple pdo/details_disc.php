@@ -30,6 +30,6 @@
     <div>Disc N° <?= $disc->disc_id ?></div>
     <div>Disc name <?= $disc->disc_title ?></div>
     <div>Disc year <?= $disc->disc_year ?></div>
-    <img src='../pictures/<?php echo $disc->disc_picture;?>' width='200px' alt='...'>
+    <img src='pictures/<?php echo $disc->disc_picture;?>' width='200px' alt='...'>
 </body>
 </html>
