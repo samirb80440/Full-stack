@@ -3,12 +3,12 @@
     require_once('header.php');
 ?>
 <body>
-    <div class='container'>
+    <div class='container mt-3'>
         <div class='row justify-content-center'>
             <div class='h-3 col-6'>Tout les albums</div><button type='button' class='btn btn-primary col-5' style="max-width: 240px;" onclick='window.location="ajoutdisc.php"'>ajout</button>
         </div>
 
-        <form method='GET' action='detailsdisc.php' class='row justify-content-center'>
+        <form method='GET' action='detailsdisc.php' class='mt-3 row justify-content-center'>
   
             <?php
             //recupere tout les disc dans la base de donnée
