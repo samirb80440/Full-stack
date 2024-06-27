@@ -21,9 +21,9 @@ require_once('header.php');
                     </div>
 
      
-        <form action='script_delete.php' method='POST' class='row justify-content-center'>
+        <form action='scrip_delete.php' method='POST' class='row justify-content-center'>
 
-            <label class='mt-2' for='SUPP'>Veuillez confirmer la suppresione en ecrivant la phrase suivante : supprimer</label><br><input type='text' class='mt-2' id='SUPP' name='SUPP' required><br>
+            <label class='mt-2' for='SUPP'>Veuillez confirmer la suppresion en ecrivant la phrase suivante : supprimer</label><br><input type='text' class='mt-2' id='SUPP' name='SUPP' required><br>
             <button type='submit' name='delete' value='<?php echo $_GET['delete']; ?>' class='btn btn-primary mt-2'>Suppresion</button>
 
         </form>
