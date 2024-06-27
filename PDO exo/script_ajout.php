@@ -24,7 +24,7 @@ if (isset($_FILES['ajoutimage'])) {
 
     // Définition du chemin de destination sécurisé (ça met un nom de chemin unique)
 
-    $destination = '../../pictures/' . uniqid() . '_' . $name;
+    $destination = 'pictures/' . uniqid() . '_' . $name;
 
 
     // Déplacement du fichier uploadé
