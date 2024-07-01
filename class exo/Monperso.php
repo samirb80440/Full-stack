@@ -8,6 +8,6 @@ $p->setPrenomage("Jeff");
 $p->setAge("30");
 $p->setGenre("masculin");
 
-
+var_dump($p);
 
 ?>
