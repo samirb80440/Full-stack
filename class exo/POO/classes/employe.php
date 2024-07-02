@@ -65,6 +65,6 @@ $this->_prime='la prime de :'. $this->_salaire * $primetotal - $this->_salaire.'
 }else{
     $this->_prime='la prime pas encore virer .';
 }
-}
+} 
 }
 ?>
