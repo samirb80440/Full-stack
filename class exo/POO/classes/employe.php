@@ -37,5 +37,13 @@ public function setservice($service){
     $this->_service = $service;
 }
 
+public function afficherannéedeservice(){
+    $date=new Datetime();
+    $dateembauche = new Datetime($this->_dateembauche);
+    $date=$dateembauche->diff($date);
+    $this->_durreembauche= $datediff->format('%R%a days');
+}
+
+
 }
 ?>
