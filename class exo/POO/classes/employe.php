@@ -9,6 +9,12 @@ public $_dateembauche;
 public $_poste;
 public $_salaire;
 public $_service;
+public $_durreembauche;
+public $_prime;
+
+
+
+
 
 
 public function setNommage($nom){
@@ -37,13 +43,28 @@ public function setservice($service){
     $this->_service = $service;
 }
 
-public function afficherannéedeservice(){
+public function afficherAnneedeservice(){
     $date=new Datetime();
     $dateembauche = new Datetime($this->_dateembauche);
-    $date=$dateembauche->diff($date);
+    $datediff=$dateembauche->diff($date);
     $this->_durreembauche= $datediff->format('%R%a days');
 }
 
+public function setprime(){
+$date= new datetime();
+$stockannée = $date->format('Y');
+$dateprime= new DateTime($stockannée . '-11-30');
+$datediff =$dateprime->diff($date);
 
+
+if($datediff->format('%R%a')>0){
+$primedefault=0.05;
+$primeranc= round(($this->_durreembauche/364))*0.02;
+$primetotal= 1.0+($primedefault+$primeranc);
+$this->_prime='la prime de :'. $this->_salaire*$primetotal-$this->_salaire.' a été virer.';
+}else{
+    $this->_prime='la prime pas encore virer .';
+}
+}
 }
 ?>
