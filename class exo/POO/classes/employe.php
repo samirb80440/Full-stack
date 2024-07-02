@@ -61,7 +61,7 @@ if($datediff->format('%R%a')>0){
 $primedefault=0.05;
 $primeranc= round(($this->_durreembauche/364))*0.02;
 $primetotal= 1.0+($primedefault+$primeranc);
-$this->_prime='la prime de :'. $this->_salaire*$primetotal -$this->_salaire.' a été virer.';
+$this->_prime='la prime de :'. $this->_salaire*$primetotal - $this->_salaire.' a été virer.';
 }else{
     $this->_prime='la prime pas encore virer .';
 }
