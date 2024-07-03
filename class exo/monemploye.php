@@ -26,10 +26,6 @@ $em2->setprime();
 
 
 
- 
-
-
-
 foreach($em as $key =>$value){
     echo $key." : ".$value."<br>";
  };
