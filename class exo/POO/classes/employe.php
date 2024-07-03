@@ -45,21 +45,21 @@ public function afficherAnneedeservice(){
     $this->_durreembauche= $datediff->format('%R%a days');
 }
 
-public function setprime(){
-$date= new datetime();
-$stockannée = $date->format('Y');
-$dateprime= new DateTime($stockannée . '-11-30');
-$datediff =$dateprime->diff($date);
+public function setPrime() {
+    $date = new DateTime();
+    $stockAnnee = $date->format('Y');
+    $datePrime = new DateTime($stockAnnee . '-11-30');
+    $dateDiff = $datePrime->diff($date);
 
-
-if($datediff->format('%R%a')>0){
-$primedefault=0.05;
-$primeranc= round(($this->_durreembauche/364))*0.02;
-$primetotal= 1.0+($primedefault+$primeranc);
-$this->_prime='la prime de :'. $this->_salaire * $primetotal - $this->_salaire.' a été virer.';
-}else{
-    $this->_prime='la prime pas encore virer .';
+    if ($dateDiff->format('%R%a') > 0) {
+        $primeDefault = 0.05;
+        $primeRanc = round(($this->_durreembauche / 364)) * 0.02;
+        $primeTotal = 1.0 + ($primeDefault + $primeRanc);
+        $primeAmount = $this->_salaire * $primeTotal - $this->_salaire;
+        $this->_prime = 'La prime de :' . number_format($primeAmount, 2) . ' a été virée.';
+    } else {
+        $this->_prime = 'La prime pas encore virée.';
+    }
 }
-} 
 }
 ?>
