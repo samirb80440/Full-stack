@@ -12,11 +12,6 @@ public $_service;
 public $_durreembauche;
 public $_prime;
 
-
-
-
-
-
 public function setNommage($nom){
     $this->_nom = $nom;
 }
