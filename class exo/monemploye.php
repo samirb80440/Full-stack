@@ -1,37 +1,95 @@
 <?php
 
 require_once('POO/classes/employe.php');
+require_once('POO/classes/enfant.php');
+require_once('POO/classes/magasin.php');
 
-$em1= new Employe();
-$em1->setNommage("Lebowski");
-$em1->setPrenomage("Jeff");
-$em1->setdateembauche("10/02/1980");
-$em1->setposte("Ouvrier");
-$em1->setsalaire("1600");
-$em1->setservice("Batiment");
-$em1->afficherAnneedeservice();
-$em1->setprime();
+$magasin = new Magasins('Magasin de Paris', '123 rue de Rivoli', '75001', 'Paris', 'Yes');
+$magasin2 = new Magasins("Magasin d'amiens", "45 rue pinsard" , "80000" , "Amiens", 'No');
 
-
-$em2 = new Employe();
-$em2->setNommage("Lemarque");
-$em2->setPrenomage("Sarah");
-$em2->setdateembauche("05/05/1970");
-$em2->setposte("sécretaire");
-$em2->setsalaire("1700");
-$em2->setservice("Administration");
-$em2->afficherAnneedeservice();
-$em2->setprime();
+$enfant1 = new Primaire("OUI","8");
+$enfant2 = new Primaire("OUI","11");
+$enfant3 = new Primaire("OUI","14");
+$enfant4 = new Primaire("OUI","18");
+$enfant5 = new Primaire("NON","0");
 
 
+$emp1 = new Employe();
+        $emp1->setNommage("Tulesky");
+        $emp1->setPrenomage("Joseph");
+        $emp1->setdateembauche('10-02-1997');
+        $emp1->setposte('soudeur');
+        $emp1->setsalaire('15000');
+        $emp1->setsecteur('métallurgie');
+        $emp1->setMagasin($magasin);
+        $emp1->setEnfant($enfant1);
+        $emp1->afficherAnneedeservice();
+        $emp1->setPrime();
 
 
-foreach($em as $key =>$value){
-    echo $key." : ".$value."<br>";
- };
+$emp2 = new Employe();
+        $emp2->setNommage("Paros");
+        $emp2->setPrenomage("john");
+        $emp2->setdateembauche('16-10-1984');
+        $emp2->setposte('Maitre nageur');
+        $emp2->setsalaire('10000');
+        $emp2->setsecteur("L'etang");
+        $emp2->setMagasin($magasin2);
+        $emp2->setEnfant($enfant2);
+        $emp2->afficherAnneedeservice();
+        $emp2->setPrime();
 
- foreach($em1 as $key =>$value){
-    echo $key." : ".$value."<br>";
- };
+$emp3 = new Employe();
+        $emp3->setNommage("Christophe");
+        $emp3->setPrenomage("Albert");
+        $emp3->setdateembauche('20-01-2000');
+        $emp3->setposte('cuisinier');
+        $emp3->setsalaire('25000');
+        $emp3->setsecteur('cuisine');
+        $emp3->setMagasin($magasin2);
+        $emp3->setEnfant($enfant3);
+        $emp3->afficherAnneedeservice();
+        $emp3->setPrime();
+
+$emp4 = new Employe();
+        $emp4->setNommage("Chatois");
+        $emp4->setPrenomage("Anne");
+        $emp4->setdateembauche('24-05-2024');
+        $emp4->setposte('Detective');
+        $emp4->setsalaire('30000');
+        $emp4->setsecteur('Chercheur');
+        $emp4->setMagasin($magasin);
+        $emp4->setEnfant($enfant4);
+        $emp4->afficherAnneedeservice();
+        $emp4->setPrime();
+
+$emp5 = new Employe();
+        $emp5->setNommage("Dupont");
+        $emp5->setPrenomage("Luna");
+        $emp5->setdateembauche('31-07-2015');
+        $emp5->setposte('Sommelier');
+        $emp5->setsalaire('45000');
+        $emp5->setsecteur('Cave');
+        $emp5->setMagasin($magasin2);
+        $emp5->setEnfant($enfant5);
+        $emp5->afficherAnneedeservice();
+        $emp5->setPrime();
+
+
+        createemp($emp1);
+        createemp($emp2);
+        createemp($emp3);
+        createemp($emp4);
+        createemp($emp5);
+
+
+        function createemp($emp){
+            // foreach($emp as $key => $value){
+            //     echo $key . " : " . $value . "<br>";
+            // };
+            echo $emp->getNom() . ' ' . $emp->getPrenom() . ' travaille au ' . $emp->getMagasin()->getNom() . ' à ' . $emp->getMagasin()->getVille() .' restauration '. $emp->getMagasin()->getRestauration()
+            . ' depuis le ' . $emp->getAnneedeservice(). ' ticket noel : ' . $emp->getEnfant()->getTicket();
+            echo '<br>';
+        }
 
 ?>
