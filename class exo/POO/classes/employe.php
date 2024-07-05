@@ -1,18 +1,19 @@
 <?php
-
 class Employe
 {
-    public $_nom;
-    public $_prenom;
-    public $_dateembauche;
-    public $_poste;
-    public $_salaire;
-    public $_secteur;
-    public $_durreembauche;
-    public $_prime;
-    public $_magasin;
-    public $_enfant;
+    // Propriétés de la classe
+    private $_nom;
+    private $_prenom;
+    private $_dateembauche;
+    private $_poste;
+    private $_salaire;
+    private $_secteur;
+    private $_durreembauche;
+    private $_prime;
+    private $_magasin;
+    private $_enfant;
 
+    // Méthodes set
     public function setNommage($nom) {
         $this->_nom = $nom;
     }
@@ -46,7 +47,33 @@ class Employe
     }
 
 
+    // Méthode pour afficher l'année de service
+    public function afficherAnneedeservice(){
+        $date = new DateTime();
+        $dateembauche = new DateTime($this->_dateembauche);
+        $datediff = $dateembauche->diff($date);
+        $this->_durreembauche = $datediff->format('%R%a'); 
+    }
+    
+        // Méthode pour calculer la prime
+    public function setPrime(){
+        $date = new DateTime('31-12-2024');
+        $stockannée = $date->format('Y');
+        $dateprime = new DateTime($stockannée . '-11-30');
+        $datediff = $dateprime->diff($date);
+           
+        if($datediff->format('%R%a') > 0 ){
+            $primedefault = 0.05;
+            $pirmranc = round(($this->_durreembauche/364)) * 0.02;
+            $primetotal =  1.0 + ($primedefault + $pirmranc);
+            $this->_prime = 'la prime de : '. $this->_salaire * $primetotal - $this->_salaire.' a ete virer.';
+            } else {
+                $this->_prime = 'la prime pas encore virer .';
+            }
+        }
 
+
+    // Méthodes get
     public function getNom() {
         return $this->_nom;
     }
@@ -72,6 +99,14 @@ class Employe
         return $this->_secteur;
     }
 
+    public function getDureembauche() {
+        return $this->_durreembauche;
+    }
+
+    public function getPrime() {
+        return $this->_prime;
+    }
+
     public function getMagasin() {
         return $this->_magasin;
     }
@@ -87,31 +122,5 @@ class Employe
     public function getEnfant() {
         return $this->_enfant;
     }
-
-
-
-    public function afficherAnneedeservice(){
-        $date = new DateTime();
-        $dateembauche = new DateTime($this->_dateembauche);
-        $datediff = $dateembauche->diff($date);
-        $this->_durreembauche = $datediff->format('%R%a'); 
     }
-
-    public function setPrime(){
-        $date = new DateTime('31-12-2024');
-        $stockannée = $date->format('Y');
-        $dateprime = new DateTime($stockannée . '-11-30');
-        $datediff = $dateprime->diff($date);
-       
-        if($datediff->format('%R%a') > 0 ){
-        $primedefault = 0.05;
-        $pirmranc = round(($this->_durreembauche/364)) * 0.02;
-        $primetotal =  1.0 + ($primedefault + $pirmranc);
-        $this->_prime = 'la prime de : '. $this->_salaire * $primetotal - $this->_salaire.' a ete virer.';
-        } else {
-            $this->_prime = 'la prime pas encore virer .';
-        }
-    }
-    }
-?>
 ?>

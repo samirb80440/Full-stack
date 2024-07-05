@@ -1,6 +1,7 @@
 <?php
 class Magasins
-{
+{    
+// Propriétés de la classe
    public $_nom;
    public $_adresse;
    public $_codepostal;
@@ -18,7 +19,7 @@ class Magasins
    }
 
  
-
+  // Méthodes pour obtenir les informations
     public function getNom() {
         return $this->_nom;
     }
@@ -28,14 +29,16 @@ class Magasins
     }
 
     public function getCodePostal() {
-        return $this->_codePostal;
-    }
+        return $this->_codepostal;
+     }
+  
 
     public function getVille() {
         return $this->_ville;
     }
 
     public function getRestauration() {
+    // Vérifie si le magasin dispose d'un restaurant
         if($this->_restauration == 'Yes'){
             return 'Oui il y un restaurant dans le magasin';
         } elseif ($this->_restauration == 'No') {

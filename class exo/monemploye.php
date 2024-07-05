@@ -4,9 +4,11 @@ require_once('POO/classes/employe.php');
 require_once('POO/classes/enfant.php');
 require_once('POO/classes/magasin.php');
 
+// Création des instances de Magasins
 $magasin = new Magasins('Magasin de Paris', '123 rue de Rivoli', '75001', 'Paris', 'Yes');
 $magasin2 = new Magasins("Magasin d'amiens", "45 rue pinsard" , "80000" , "Amiens", 'No');
 
+// Création des instances de Magasins
 $enfant1 = new Primaire("OUI","8");
 $enfant2 = new Primaire("OUI","11");
 $enfant3 = new Primaire("OUI","14");
@@ -14,7 +16,8 @@ $enfant4 = new Primaire("OUI","18");
 $enfant5 = new Primaire("NON","0");
 
 
-$emp1 = new Employe();
+        // Création des instances de Magasins
+        $emp1 = new Employe();
         $emp1->setNommage("Tulesky");
         $emp1->setPrenomage("Joseph");
         $emp1->setdateembauche('10-02-1997');
@@ -27,7 +30,7 @@ $emp1 = new Employe();
         $emp1->setPrime();
 
 
-$emp2 = new Employe();
+        $emp2 = new Employe();
         $emp2->setNommage("Paros");
         $emp2->setPrenomage("john");
         $emp2->setdateembauche('16-10-1984');
@@ -39,7 +42,7 @@ $emp2 = new Employe();
         $emp2->afficherAnneedeservice();
         $emp2->setPrime();
 
-$emp3 = new Employe();
+        $emp3 = new Employe();
         $emp3->setNommage("Christophe");
         $emp3->setPrenomage("Albert");
         $emp3->setdateembauche('20-01-2000');
@@ -51,7 +54,7 @@ $emp3 = new Employe();
         $emp3->afficherAnneedeservice();
         $emp3->setPrime();
 
-$emp4 = new Employe();
+        $emp4 = new Employe();
         $emp4->setNommage("Chatois");
         $emp4->setPrenomage("Anne");
         $emp4->setdateembauche('24-05-2024');
@@ -63,7 +66,7 @@ $emp4 = new Employe();
         $emp4->afficherAnneedeservice();
         $emp4->setPrime();
 
-$emp5 = new Employe();
+        $emp5 = new Employe();
         $emp5->setNommage("Dupont");
         $emp5->setPrenomage("Luna");
         $emp5->setdateembauche('31-07-2015');
@@ -75,21 +78,29 @@ $emp5 = new Employe();
         $emp5->afficherAnneedeservice();
         $emp5->setPrime();
 
-
+       // Création des instances de Magasins
         createemp($emp1);
         createemp($emp2);
         createemp($emp3);
         createemp($emp4);
         createemp($emp5);
 
-
+        // Création des instances de Magasins
         function createemp($emp){
-            // foreach($emp as $key => $value){
-            //     echo $key . " : " . $value . "<br>";
-            // };
-            echo $emp->getNom() . ' ' . $emp->getPrenom() . ' travaille au ' . $emp->getMagasin()->getNom() . ' à ' . $emp->getMagasin()->getVille() .' restauration '. $emp->getMagasin()->getRestauration()
-            . ' depuis le ' . $emp->getAnneedeservice(). ' ticket noel : ' . $emp->getEnfant()->getTicket();
-            echo '<br>';
+                echo '<br>nom  :' .$emp->getNom() .
+                '<br>Prenom :' . $emp->getPrenom() .
+                '<br>Date d\'embauche :' . $emp->getDateembauche() .
+                '<br>Poste :' . $emp->getPoste() .
+                '<br>Salaire :' . $emp->getSalaire() .
+                '<br>Secteur :' . $emp->getSecteur() .
+                '<br>Dureembauche :' . $emp->getDureembauche() .
+                '<br>Prime :' . $emp->getPrime() .
+                '<br>travaille au ' . $emp->getMagasin()->getNom() . 
+                '<br>à ' . $emp->getMagasin()->getVille() .
+                '<br>au ' . $emp->getMagasin()->getAdresse().' CP ' . $emp->getMagasin()->getCodePostal().
+                '<br>restauration '. $emp->getMagasin()->getRestauration() .
+                '<br>depuis le ' . $emp->getAnneedeservice() .
+                '<br>ticket noel : ' . $emp->getEnfant()->getTicket().'<br>';
         }
 
 ?>
