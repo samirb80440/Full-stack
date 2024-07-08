@@ -50,22 +50,22 @@
                     <div class="col-12 mb-3">
                         <label for="Nom" class="col-3 couleur form-label">Nom et Prenom*:</label>
                         <input type="text" name="nomprenom" class="form-control" id="Nom">
-                        <p id="texte">Ce champs est obligatore</p>
+                        <p class="texte">Ce champs est obligatore</p>
                     </div>
                     <div class="col-md-6 col-12 mb-3">
                         <label for="Email" class="col-6  couleur form-label">Email*:</label>
                         <input type="email" name="Email" class="form-control" id="Email">
-                        <p id="textes">Ce champs est obligatore</p>
+                        <p class="texte">Ce champs est obligatore</p>
                     </div>
                     <div class="col-md-6 col-12 mb-3">
                         <label for="tel" class="col-3 couleur form-label">Téléphone*:</label>
                         <input type="text" name="tel" class="form-control" id="Tel">
-                        <p id="textes1">Ce champs est obligatore</p>
+                        <p class="texte">Ce champs est obligatore</p>
                     </div>
                     <div class="col-12 mb-3">
                         <label for="demande" class="col-3 couleur form-label">Votre Adresse*:</label>
                         <textarea cols="500" rows="4" name="adresse" class="form-control" id="Adresse"></textarea>
-                        <p id="textes2">Ce champs est obligatore</p>
+                        <p class="texte">Ce champs est obligatore</p>
                     </div>
                     <div class="container">
                         <div class="row justify-content-end mt-3">
