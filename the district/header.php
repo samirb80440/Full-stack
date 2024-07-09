@@ -1,3 +1,22 @@
+<!DOCTYPE html>
+<?php
+session_start();
+require_once('DAO.php');
+
+$servername = "localhost";
+$username = "admin";
+$password = "Afpa1234";
+$dbname = "the_district";
+
+try {
+    $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
+    // configurer le mode d'erreur PDO pour générer des exceptions
+    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+} catch(PDOException $e) {
+    echo "Erreur de connexion à la base de données: " . $e->getMessage();
+}
+?>
+
 <header id="navbar">
         <nav class="navbar navbar-expand-sm bg-danger navbar-dark">
             <a class="navbar-brand" href="#"><img src="assets/images_the_district/the_district_brand/logo_transparent.png"
