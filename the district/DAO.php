@@ -59,4 +59,13 @@ $stmt->bindParam(':libelle',$nv_plat['libelle']);
 
 
 
+
+
+
+
+
+
+
+
+
 ?>
