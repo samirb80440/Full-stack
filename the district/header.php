@@ -6,7 +6,7 @@ require_once('DAO.php');
 $servername = "localhost";
 $username = "admin";
 $password = "Afpa1234";
-$dbname = "the_district";
+$dbname = "theDistrict";
 
 try {
     $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
