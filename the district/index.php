@@ -17,9 +17,9 @@
         ?>
        
        <div class="parallaxe">
-       <div class="fs-1 col-12 ms-md-5 red">Les Categories Favorites :</div>
-       <div class="mid2 container my-5">
-    <div class="row justify-content-center mt-3">
+           <div class="fs-1  col-12 ms-md-5 red">Les Categories Favorites :</div>
+           <div class="mid2 container my-5">
+               <div class="row justify-content-center mt-3">
       
     
         <?php
