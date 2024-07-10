@@ -71,8 +71,8 @@ body {
 }
 
 #navbot {
-    margin-right: 27vw;
-    width: 22vw;
+    margin-left: 38vw;
+    width: 19vw;
 }
 
 button {
@@ -84,9 +84,6 @@ p {
     color: #F60707;
 }
 
-.red{
-    color: crimson;
-}
 
 
 .color-B09595 {

@@ -33,7 +33,7 @@ $cssFiles = array(
     '/Plat.php' => 'Plat.css',
     '/Categorie.php' => 'Catégorie.css',
     '/commande.php' => 'commande.css',
-    '/contact' => 'media.css',
+    '/contact.php' => 'contact.css',
     // Ajoutez d'autres associations ici
 );
 

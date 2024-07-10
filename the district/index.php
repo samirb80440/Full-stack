@@ -1,9 +1,26 @@
     <?php 
-    require_once('header.php')
-    ?>
+    require_once('header.php');
+    
+    $stmt = $conn->prepare("SELECT * FROM categorie");
+
+    try {
+
+    $stmt->execute();
+
+    } catch (PDOException $e) {
+
+        echo 'Erreur lors de l\'exécution de la requête : ' . $e->getMessage();
+    }   
+
+        $result = $stmt->fetchAll();
+    
+        ?>
    
     <div class="parallaxe">
-    <div class="container">
+    <div class="mid2 container my-5">
+        <div class="row justify-content-center mt-3">
+            <div class="fs-1 col-12 ms-md-5 red">Les Categories Favorites :</div>
+        <div class="container">
         <div class="row g-0 mt-xl-3">
             <div class="col-12 col-sm-6 col-lg-4 mt-3">
                 <a href="/categorie/salade.html">
