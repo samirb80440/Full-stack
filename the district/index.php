@@ -29,7 +29,6 @@
                   <a  href="Categorie.php">
                         <img src="assets/images_the_district/category/'.$category['image'].'" class="imageanime imagecat img-fluid" alt="'.$category['libelle'].'">
                         <div class="card-body">
-                            <h5 class="card-title">'.$category['libelle'].'</h5>
                         </div>
                     </a>
                 </div>';
@@ -68,7 +67,6 @@
                    <a  href="/Categorie.php'.$stockcat['libelle'].'.html">
                             <img src="assets/images_the_district/food/'.$plat["image"].'" class="imageanime imageplat img-fluid" alt="'.$plat["libelle"].'">
                             <div class="card-body">
-                                <h5 class="card-title">'.$plat["libelle"].'</h5>
                             </div>
                         </a>
                     </div>';
@@ -80,6 +78,10 @@
     ?>
     </div>
     </div>
+      
+      
+      
+      
       
     <?php require_once('footer.php') ?>
 </div>

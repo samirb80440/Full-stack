@@ -36,7 +36,6 @@
                         <a  href="/Categorie.php'.$category['libelle'].'.html">
                         <img src="assets/images_the_district/category/'.$category['image'].'" class="imageanime imagecat img-fluid" alt="'.$category['libelle'].'food">
                         <div class="card-body">
-                          <h5 class="card-title h3">'.$category['libelle'].'</h5>
                         </div>
                       </a>
                       </div>';
@@ -47,10 +46,6 @@
     $i++;
     };
 ?>     
-
-
-
-
 
 
     <div id="boutonarmy" class="container">
