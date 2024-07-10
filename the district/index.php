@@ -26,7 +26,7 @@
             $i = 0;
                 foreach($result as $category){
                     echo '<div class="col-12 col-sm-6 col-lg-4 mt-3"">
-                  <a  href="/Categorie.php'.$category['libelle'].'.html">
+                  <a  href="Categorie.php">
                         <img src="assets/images_the_district/category/'.$category['image'].'" class="imageanime imagecat img-fluid" alt="'.$category['libelle'].'">
                         <div class="card-body">
                             <h5 class="card-title">'.$category['libelle'].'</h5>
