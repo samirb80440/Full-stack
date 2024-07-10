@@ -79,16 +79,13 @@ echo '<link rel="stylesheet" href="assets/css/' . $cssFile . '">'; ?>
                 </ul>
             </div>
         </nav>
-        
-        
-
-        
-        
-        <?php
-    if ($_SERVER['REQUEST_URI'] == "/index.php") {
+       
+       
+       <?php
+    if ($_SERVER['REQUEST_URI'] == "/index.php") echo
     // Afficher la bannière vidéo sur la page d'accueil
-    ?>
-    <div id="parent">
+   
+    '<div id="parent">
         <div id="banniere" class="row g-0">
             <video id="video" class="col-12" src="assets/videos/123629-728697948_small.mp4"
             style="width: 100vmax; height: 20vmax;" playsinline autoplay loop muted></video>
@@ -98,20 +95,20 @@ echo '<link rel="stylesheet" href="assets/css/' . $cssFile . '">'; ?>
                 <input class="form-control me-2" type="search" placeholder="Recherche..." aria-label="Search">
             </form>
         </div>
-    </div>
- <?php
- } elseif ($_SERVER['REQUEST_URI'] != "/commande.php") {
+    </div>';
+ 
+  elseif ($_SERVER['REQUEST_URI'] != "/commande.php") echo
     // Afficher la bannière image sur les autres pages (sauf la page de commande)
-    ?>
-    <div class="container-fluid p-0">
+ 
+   ' <div class="container-fluid p-0">
         <div id="parent">
             <div id="banniere" class="row g-0">
                 <img class="imagebanniere img-fluid" src="assets/images_the_district/fosyyyy.jpg" alt="banniere">
             </div>
         </div>
-    </div>
- <?php
- } else {
+    </div>';
+
+ else {
     // Ne pas afficher de bannière sur la page de commande
     // Vous pouvez laisser ce bloc vide ou ajouter du contenu spécifique pour la page de commande
  }
