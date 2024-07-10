@@ -1,29 +1,7 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/media.css">
-    <link rel="shortcut icon" type="image/png" href="assets/images_the_district/the_district_brand/favicon.png">
-    <title>District</title>
-</head>
-<body>
     <?php 
     require_once('header.php')
     ?>
-    <div id="parent">
-        <div id="banniere" class="row g-0">
-            <video id="video" class="col-12" src="assets/videos/123629-728697948_small.mp4"
-                style="width: 100vmax; height: 20vmax;" playsinline autoplay loop muted></video>
-        </div>
-        <div id="recherche" class="d-none d-sm-flex">
-            <form class="col-12" role="search">
-                <input class="form-control me-2" type="search" placeholder="Recherche..." aria-label="Search">
-            </form>
-        </div>
-    </div>
+   
     <div class="parallaxe">
     <div class="container">
         <div class="row g-0 mt-xl-3">

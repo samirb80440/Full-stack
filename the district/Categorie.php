@@ -13,13 +13,6 @@
 <?php 
     require_once('header.php')
     ?>
-    <div class="container-fluid p-0">
-        <div id="parent">
-            <div id="banniere" class="row g-0">
-                <img class="imagebanniere img-fluid" src="assets/images_the_district/fosyyyy.jpg" alt="banniere">
-            </div>
-        </div>
-    </div>
     <div id="page1">
         <div class="container">
             <div class="h1">toute les catégories :</div>
