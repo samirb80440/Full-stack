@@ -26,7 +26,7 @@
             $i = 0;
                 foreach($result as $category){
                     echo '<div class="col-12 col-sm-6 col-lg-4 mt-3"">
-                    <a class= href="/Categorie.php">
+                  <a  href="/Categorie.php'.$category['libelle'].'.html">
                         <img src="assets/images_the_district/category/'.$category['image'].'" class="imageanime imagecat img-fluid" alt="'.$category['libelle'].'">
                         <div class="card-body">
                             <h5 class="card-title">'.$category['libelle'].'</h5>
@@ -65,8 +65,7 @@
             $stmt->execute();
             $stockcat = $stmt->fetch();
             echo '  <div class="col-12 col-sm-6 col-lg-4 mt-3"">
-                    <a class= href="/Categorie.php">
-                        <a class= href="#'.$stockcat['libelle'].'.html">
+                   <a  href="/Categorie.php'.$stockcat['libelle'].'.html">
                             <img src="assets/images_the_district/food/'.$plat["image"].'" class="imageanime imageplat img-fluid" alt="'.$plat["libelle"].'">
                             <div class="card-body">
                                 <h5 class="card-title">'.$plat["libelle"].'</h5>

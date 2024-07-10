@@ -75,7 +75,13 @@ body {
     color: white;
 }
 
+.card{
+    background-color: black;
+}
 
+.red{
+    color: crimson;
+}
 
 button {
     color: #B09595;
