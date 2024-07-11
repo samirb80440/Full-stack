@@ -1,3 +1,0 @@
-
-nom et prenom :bedrouni samir, email :samirb80440@gmail.com, telephone :0622196007, adresse du client :35 rue Jules verne, date et heure de la commande :11/07/2024 10-07-39 plat commander : Pizza Bianca nombre commander : 1 prix payer :14
-nom et prenom :bedrouni samir, email :samirb80440@gmail.com, telephone :0622196007, adresse du client :35 rue Jules verne, date et heure de la commande :11/07/2024 10-07-46 plat commander : Pizza Bianca nombre commander : 1 prix payer :14
