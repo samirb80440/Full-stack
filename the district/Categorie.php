@@ -3,7 +3,7 @@
     ?>
 
 <?php
-    $stmt = $conn->prepare("SELECT * FROM categorie");
+    $stmt = $conn->prepare("SELECT * FROM categorie WHERE active ='Yes'");
 
     try {
 
@@ -33,13 +33,13 @@
                   <div class="row justify-content-between mt-3">';
       };
       echo '<div class="card col-12 col-sm-6 col-md-4 mt-3 mx-auto">
-                        <a  href="/Categorie.php'.$category['libelle'].'.html">
+                        <a  href="/Plat.php?numcat='.$category['id'].'">
                         <img src="assets/images_the_district/category/'.$category['image'].'" class="imageanime imagecat img-fluid" alt="'.$category['libelle'].'food">
                         <div class="card-body">
                         </div>
                       </a>
                       </div>';
-                      if($i == 6 or $i ==8 ){
+                      if($i == 6 or $i ==7 ){
                         echo ' </div>
                             </div>
                           </div>';}

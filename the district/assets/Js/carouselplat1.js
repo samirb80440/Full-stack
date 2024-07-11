@@ -2,86 +2,56 @@
 document.addEventListener("DOMContentLoaded", () => {
   console.log("DOM fully loaded and parsed");
 
-  // Obtenir les éléments HTML pour les boutons Précédent et Suivant
-  var precedent = document.getElementById("precedent");
-  var suivant = document.getElementById("suivant");
-
-  // Obtenir les éléments HTML pour les pages du carousel
-  var veggie = document.getElementById("pageveggie");
-  var hamburger = document.getElementById("pagehamburger");
-  var pasta = document.getElementById("pagepate");
-  var wrap = document.getElementById("pagewrap");
-  var pizza = document.getElementById("pagepizza");
-  var asianfood = document.getElementById("pageasian");
-
-  // Compteur de page pour le carousel
-  var page = 1;
-
-  // Si l'élément HTML "checkplathtml" existe, masquer toutes les pages sauf la première
-  if (document.getElementById("checkplathtml")!= null) {
-    hamburger.style.display = "none";
-    pasta.style.display = "none";
-    wrap.style.display = "none";
-    pizza.style.display = "none";
-    asianfood.style.display = "none";
-  }
-
-  // Ajouter un écouteur d'événement pour le bouton Suivant
-  suivant.addEventListener("click", function suivant() {
-    // Incrémenter le compteur de page
-    page++;
+  if(document.getElementById('page2') != null){
+    const veggie=document.getElementById('page1');
+    const hamburger = document.getElementById('page2');
+    const pasta = document.getElementById('page3');
+    // const wrap = document.getElementById('pageWraps');
+    // const pizza = document.getElementById('pagePizza');
+    // const asianfood = document.getElementById('pageSalade');
+    let page = 1 //Compteur de Page pour le carousel
+    if(document.getElementById("checkplathtml")!=null){
+    hamburger.style.display= 'none';
+    pasta.style.display= 'none';
+    // wrap.style.display= 'none';
+    // pizza.style.display= 'none';
+    // asianfood.style.display='none';
+    // veggie.style.display='none';}//definie et desactive tout les cellule sauf la premiere si checkplat existe
     
-    // Si le compteur de page dépasse 6, le réinitialiser à 1
-    if (page > 6) {
-      page = 1;
-    }
     
-    // Appeler la fonction pages pour mettre à jour l'affichage de la page
-    pages(page);
-  }); // Fait tourner le carousel avec le bouton Suivant
+    suivant.addEventListener('click',function suivant(){
+        page++;
+        if (page > 3) {
+            page = 1;
+        }
+        pages(page);
+    })//fait tourner le carousel avec Suivant
 
-  // Ajouter un écouteur d'événement pour le bouton Précédent
-  precedent.addEventListener("click", function precedent() {
-    // Décrémenter le compteur de page
+precedent.addEventListener('click',function precedent(){
     page--;
-    
-    // Si le compteur de page est inférieur à 1, le réinitialiser à 6
-    if (page < 1) {
-      page = 6;
+    if ( page < 1) {
+        page = 3;
     }
-    
-    // Appeler la fonction pages pour mettre à jour l'affichage de la page
     pages(page);
-  }); // Fait tourner le carousel avec le bouton Précédent
+})//fait tourner le carousel avec Precedent
+}
 
-  // Fonction pour mettre à jour l'affichage de la page en fonction du compteur de page
-  function pages(page) {
-    // Masquer toutes les pages
-    veggie.style.display = "none";
-    hamburger.style.display = "none";
-    pasta.style.display = "none";
-    wrap.style.display = "none";
-    pizza.style.display = "none";
-    asianfood.style.display = "none";
 
-    // Afficher la page correspondante au compteur de page
-    if (page == 1) {
-      veggie.style.display = "block";
-    }
-    if (page == 2) {
-      hamburger.style.display = "block";
-    }
-    if (page == 3) {
-      pasta.style.display = "block";
-    }
-    if (page == 4) {
-      wrap.style.display = "block";
-    }
-    if (page == 5) {
-      pizza.style.display = "block";
-    }
-    if (page == 6) {
-      asianfood.style.display = "block";
-    }
-  }
-});
+function pages(page){ //fonctionne pour afficher la page en fonction du compteur page
+
+veggie.style.display= 'none';
+hamburger.style.display= 'none';
+pasta.style.display= 'none';
+// wrap.style.display= 'none';
+// pizza.style.display= 'none';
+// asianfood.style.display='none';
+
+if (page==1) {
+veggie.style.display= 'block';
+} else if (page==2) {
+hamburger.style.display= 'block';
+} else if (page==3) {
+pasta.style.display= 'block';
+}
+}
+}});

@@ -1,51 +1,39 @@
-// Get HTML elements by their IDs
-var precedent = document.getElementById("precedent");
-var suivant = document.getElementById("suivant");
+const precedent = document.getElementById("precedent")
+const suivant = document.getElementById("suivant") //definie les bouton Precedent et suivant
 
-// Initially, hide the second page
-document.getElementById("page2").style.display = "none";
+document.getElementById('page2').style.display='none' //fait disparaitre la page 2
+let page = 1 //compteur de page
 
-// Initialize the current page to 1
-var page = 1;
+suivant.addEventListener('click',function suivant(){
+    page++
+    if (page > 2) {
+        page = 1
+    }
+    pages(page)
+}
+)//fait tourner le carousel avec Suivant
 
-// Add an event listener to the "suivant" button
-suivant.addEventListener("click", function suivant() {
-  // Increment the page number
-  page++;
-  
-  // If the page number exceeds 2, reset it to 1
-  if (page > 2) {
-    page = 1;
-  }
-  
-  // Call the pages function to update the page display
-  pages(page);
-});
+precedent.addEventListener('click',function precedent(){
+    page--
+    if ( page < 1) {
+        page = 2
+    }
+    pages(page)
+}
+)//fait tourner le carousel avec Precedent
 
-// Add an event listener to the "precedent" button
-precedent.addEventListener("click", function precedent() {
-  // Decrement the page number
-  page--;
-  
-  // If the page number is less than 1, reset it to 2
-  if (page < 1) {
-    page = 2;
-  }
-  
-  // Call the pages function to update the page display
-  pages(page);
-});
+function pages(page){//fonctionne pour afficher la page en fonction du compteur
+if (page==1) {
+    document.getElementById('page1').style.display= 'block'
+    document.getElementById('page2').style.display= 'none'
+}
+else if(page==2) {
+    document.getElementById('page1').style.display= 'none'
+    document.getElementById('page2').style.display= 'block'
+ }
+}
 
-// Function to update the page display based on the current page number
-function pages(page) {
-  // If the current page is 1, show page 1 and hide page 2
-  if (page == 1) {
-    document.getElementById("page1").style.display = "block";
-    document.getElementById("page2").style.display = "none";
-  }
-  // If the current page is 2, show page 2 and hide page 1
-  else if (page == 2) {
-    document.getElementById("page1").style.display = "none";
-    document.getElementById("page2").style.display = "block";
-  }
+function categoriered (page){//ne sert pas c'etait un test pour rediriger faire le carousel a la bonne page 
+    window.location.href="../plat.html"
+pages(page)
 }
