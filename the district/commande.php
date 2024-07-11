@@ -62,7 +62,7 @@
                             <p class="texte">Ce champs est obligatore</p>
                         </div>
                         
-                        <div class="row justify-content-between mt-3">
+                        <div class="row justify-content-end mt-3">
                            <button class="btn btn-primary rounded-pill col-md-2 col-3" type="submit" id="suivant">Envoyer</button>
                         </div>
                     </div>
