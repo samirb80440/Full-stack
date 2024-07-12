@@ -1,5 +1,4 @@
 <?php 
-// Inclure le fichier header.php
 require_once("header.php")
 ?>
 

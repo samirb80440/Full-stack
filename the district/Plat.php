@@ -83,13 +83,16 @@ require_once('header.php')
 </div> 
 </div>
 
-<!-- Div contenant les boutons de pagination -->
 <div id="boutonarmy" class="container">
-    <div class="row justify-content-between mt-3">
-        <button class="btn btn-succes color-B09595 rounded-pill col-3" type="button"
-            id="precedent">précédent</button>
-        <button class="btn btn-succes color-B09595 rounded-pill col-3" type="button" id="suivant"> suivant</button>
+        <div class="row justify-content-between mt-3">
+            <button class="btn btn-succes color-B09595 rounded-pill col-3" type="button"
+                id="precedent">précédent</button>
+            <button class="btn btn-succes color-B09595 rounded-pill col-3" type="button" id="suivant"> suivant</button>
+        </div>
     </div>
-</div>
-<?php 
-// Inclusion du fichier footer
+    <?php require_once('footer.php') ?>
+    <script src="assets/Js/carouselplat1.js"></script>
+   
+</body>
+
+</html>

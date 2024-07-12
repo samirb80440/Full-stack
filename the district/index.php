@@ -1,5 +1,4 @@
 <?php 
-// Inclusion du fichier header.php
 require_once('header.php');
     
 // Préparation de la requête SQL pour récupérer les catégories actives
@@ -77,12 +76,12 @@ $result = $stmt->fetchAll();
            ?>
         </div>
     </div>
-</div>
-
-<?php 
+    
+    <?php 
 // Inclusion du fichier footer.php
 require_once('footer.php')?>
  
+</div>
 <script src="assets/Js/redirection.js"></script>
 </body>
 
