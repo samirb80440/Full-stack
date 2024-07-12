@@ -34,7 +34,7 @@ $cssFiles = array(
     '/Categorie.php' => 'Catégorie.css',
     '/commande.php' => 'commande.css',
     '/contact.php' => 'contact.css',
-    '/commandescript.php'=>'commande.css'
+    '/commandescript.php'=>'commandescript.css'
     // Ajoutez d'autres associations ici
 );
 
@@ -110,4 +110,5 @@ if ($_SERVER['REQUEST_URI'] == "/index.php") {
  // Vous pouvez laisser ce bloc vide ou ajouter du contenu spécifique pour la page de commande
 }
 ?>
+  <meta http-equiv="refresh" content="30; URL=index.php">
 </header>
