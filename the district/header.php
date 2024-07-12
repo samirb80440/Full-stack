@@ -110,5 +110,4 @@ if ($_SERVER['REQUEST_URI'] == "/index.php") {
  // Vous pouvez laisser ce bloc vide ou ajouter du contenu spécifique pour la page de commande
 }
 ?>
-  <meta http-equiv="refresh" content="30; URL=index.php">
 </header>
