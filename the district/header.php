@@ -1,18 +1,23 @@
-<!DOCTYPE html>
 <?php
+// Démarre la session
 session_start();
+
+// Inclut le fichier DAO.php
 require_once('DAO.php');
 
+// Informations de connexion à la base de données
 $servername = "localhost";
 $username = "admin";
 $password = "Afpa1234";
 $dbname = "theDistrict";
 
+// Essaye de se connecter à la base de données
 try {
     $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
-    // configurer le mode d'erreur PDO pour générer des exceptions
+    // Configure le mode d'erreur PDO pour générer des exceptions
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 } catch(PDOException $e) {
+    // Affiche un message d'erreur si la connexion échoue
     echo "Erreur de connexion à la base de données: " . $e->getMessage();
 }
 ?>
@@ -28,6 +33,7 @@ try {
      <link rel="shortcut icon" type="image/png" href="assets/images_the_district/the_district_brand/favicon.png">
 
      <?php
+// Array associant les fichiers CSS à chaque page
 $cssFiles = array(
     '/index.php' => 'media.css',
     '/Plat.php' => 'Plat.css',
@@ -53,36 +59,14 @@ echo '<link rel="stylesheet" href="assets/css/' . $cssFile . '">'; ?>
 </head>
 <body>
 
-
 <header id="navbar">
-        <nav class="navbar navbar-expand-sm bg-danger navbar-dark">
-            <a class="navbar-brand" href="#"><img src="assets/images_the_district/the_district_brand/logo_transparent.png"
-                    width="50" class="d-inline-block align-text-top" alt="navicon"></a>
+    <!-- Navigation bar -->
+    <nav class="navbar navbar-expand-sm bg-danger navbar-dark">
+        <!-- Logo and navigation links -->
+    </nav>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse justify-content-center col-6" id="collapsibleNavbar">
-                <ul class="navbar-nav">
-                    <li class="textnav nav-item px-5">
-                        <a  <?php if($_SERVER['REQUEST_URI'] =="/index.php")echo ' class="textnav nav-link active"';else echo ' class="textnav nav-link"'?> href="index.php" title="Accueil">Accueil</a>
-                    </li>
-                    <li class="textnav nav-item px-5">
-                        <a <?php if($_SERVER['REQUEST_URI'] =="/Categorie.php")echo ' class="textnav nav-link active"';else echo ' class="textnav nav-link"'?> href="Categorie.php" title="Categorie">Categorie</a>
-                    </li>
-                    <li class="textnav nav-item px-5">
-                        <a <?php if($_SERVER['REQUEST_URI'] == "/Plat.php")echo ' class="textnav nav-link active"';else echo ' class="textnav nav-link"'?> href="Plat.php" title="Plat">Plat</a>
-                    </li>
-                    <li class="textnav nav-item px-5">
-                        <a <?php if($_SERVER['REQUEST_URI'] == "/contact.php")echo ' class="textnav nav-link active"';else echo ' class="textnav nav-link"'?> href="contact.php" title="Contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-       
-       
-        <?php
+    <!-- Bannière vidéo ou image en fonction de la page -->
+    <?php
 if ($_SERVER['REQUEST_URI'] == "/index.php") {
     // Afficher la bannière vidéo sur la page d'accueil
     echo '<div id="parent">
