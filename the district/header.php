@@ -34,6 +34,7 @@ $cssFiles = array(
     '/Categorie.php' => 'Catégorie.css',
     '/commande.php' => 'commande.css',
     '/contact.php' => 'contact.css',
+    '/commandescript.php'=>'commande.css'
     // Ajoutez d'autres associations ici
 );
 
@@ -95,18 +96,18 @@ if ($_SERVER['REQUEST_URI'] == "/index.php") {
             </form>
         </div>
     </div>';
-} elseif ($_SERVER['REQUEST_URI'] != "/commande.php" && !isset($_GET['platcom'])) {
-    // Afficher la bannière image sur les autres pages (sauf la page de commande)
-    echo '<div class="container-fluid p-0">
-        <div id="parent">
-            <div id="banniere" class="row g-0">
-                <img class="imagebanniere img-fluid" src="assets/images_the_district/fosyyyy.jpg" alt="banniere">
-            </div>
-        </div>
-    </div>';
+} elseif (!in_array($_SERVER['REQUEST_URI'], ["/commande.php", "/commandescript.php"]) &&!isset($_GET['platcom'])) {
+     // Afficher la bannière image sur les autres pages (sauf la page de commande)
+     echo '<div class="container-fluid p-0">
+     <div id="parent">
+         <div id="banniere" class="row g-0">
+             <img class="imagebanniere img-fluid" src="assets/images_the_district/fosyyyy.jpg" alt="banniere">
+         </div>
+     </div>
+ </div>';
 } else {
-    // Ne pas afficher de bannière sur la page de commande
-    // Vous pouvez laisser ce bloc vide ou ajouter du contenu spécifique pour la page de commande
+ // Ne pas afficher de bannière sur la page de commande
+ // Vous pouvez laisser ce bloc vide ou ajouter du contenu spécifique pour la page de commande
 }
 ?>
 </header>

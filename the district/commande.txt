@@ -1,0 +1,32 @@
+
+nom et prenom :bedrouni samir, email :samirb80440@gmail.com, telephone :0622196007, adresse du client :35 Rue Jules Verne 80440 Amiens , date et heure de la commande :12/07/2024 08-07-21 plat commander : Pizza Margherita nombre commander : 1 prix payer :14
+nom et prenom :bedrouni samir, email :samirb80440@gmail.com, telephone :0622196007, adresse du client :35 Rue Jules Verne 80440 Amiens , date et heure de la commande :12/07/2024 08-07-37 plat commander : Pizza Margherita nombre commander : 1 prix payer :14
+nom et prenom :bedrouni samir, email :samirb80440@gmail.com, telephone :0622196007, adresse du client :35 Rue Jules Verne 80440 Amiens , date et heure de la commande :12/07/2024 08-07-04 plat commander : Pizza Margherita nombre commander : 1 prix payer :14
+nom et prenom :bedrouni samir, email :samirb80440@gmail.com, telephone :0622196007, adresse du client :35 Rue Jules Verne 80440 Amiens , date et heure de la commande :12/07/2024 08-07-18 plat commander : Pizza Margherita nombre commander : 1 prix payer :14
+nom et prenom :bedrouni samir, email :samirb80440@gmail.com, telephone :0622196007, adresse du client :35 Rue Jules Verne 80440 Amiens , date et heure de la commande :12/07/2024 08-07-06 plat commander : Pizza Margherita nombre commander : 1 prix payer :14
+nom et prenom :bedrouni samir, email :samirb80440@gmail.com, telephone :0622196007, adresse du client :35 rue Jules Verne 80440 Amiens, date et heure de la commande :12/07/2024 08-07-23 plat commander : Lasagnes nombre commander : 2 prix payer :24
+nom et prenom :bedrouni samir, email :samirb80440@gmail.com, telephone :0622196007, adresse du client :35 rue Jules Verne 80440 Amiens, date et heure de la commande :12/07/2024 08-07-09 plat commander : Lasagnes nombre commander : 2 prix payer :24
+nom et prenom :bedrouni samir, email :samirb80440@gmail.com, telephone :0622196007, adresse du client :35 rue Jules Verne 80440 Amiens, date et heure de la commande :12/07/2024 08-07-51 plat commander : Lasagnes nombre commander : 2 prix payer :24
+nom et prenom :bedrouni samir, email :samirb80440@gmail.com, telephone :0622196007, adresse du client :35 rue Jules Verne 80440 Amiens, date et heure de la commande :12/07/2024 08-07-07 plat commander : Lasagnes nombre commander : 2 prix payer :24
+nom et prenom :bedrouni samir, email :samirb80440@gmail.com, telephone :0622196007, adresse du client :35 rue Jules Verne 80440 Amiens, date et heure de la commande :12/07/2024 08-07-22 plat commander : Lasagnes nombre commander : 2 prix payer :24
+nom et prenom :bedrouni samir, email :samirb80440@gmail.com, telephone :0622196007, adresse du client :35 rue Jules Verne 80440 Amiens, date et heure de la commande :12/07/2024 08-07-57 plat commander : Lasagnes nombre commander : 2 prix payer :24
+nom et prenom :bedrouni samir, email :samirb80440@gmail.com, telephone :0622196007, adresse du client :35 rue Jules Verne 80440 Amiens, date et heure de la commande :12/07/2024 08-07-00 plat commander : District Burger nombre commander : 1 prix payer :8
+nom et prenom :bedrouni samir, email :samirb80440@gmail.com, telephone :0622196007, adresse du client :35 rue Jules Verne 80440 Amiens, date et heure de la commande :12/07/2024 08-07-26 plat commander : District Burger nombre commander : 1 prix payer :8
+nom et prenom :bedrouni samir, email :samirb80440@gmail.com, telephone :0622196007, adresse du client :35 rue Jules Verne 80440 Amiens
+, date et heure de la commande :12/07/2024 08-07-45 plat commander : Buffalo Chicken Wrap nombre commander : 1 prix payer :5
+nom et prenom :bedrouni samir, email :samirb80440@gmail.com, telephone :0622196007, adresse du client :35 rue Jules Verne 80440 Amiens
+, date et heure de la commande :12/07/2024 08-07-12 plat commander : Buffalo Chicken Wrap nombre commander : 1 prix payer :5
+nom et prenom :bedrouni samir, email :samirb80440@gmail.com, telephone :0622196007, adresse du client :35 rue Jules Verne 80440 Amiens
+, date et heure de la commande :12/07/2024 08-07-20 plat commander : Buffalo Chicken Wrap nombre commander : 1 prix payer :5
+nom et prenom :bedrouni samir, email :samirb80440@gmail.com, telephone :0622196007, adresse du client :35 rue Jules Verne 80440 Amiens
+, date et heure de la commande :12/07/2024 08-07-35 plat commander : Buffalo Chicken Wrap nombre commander : 1 prix payer :5
+nom et prenom :bedrouni samir, email :samirb80440@gmail.com, telephone :0622196007, adresse du client :35 rue Jules Verne 80440 Amiens
+, date et heure de la commande :12/07/2024 08-07-13 plat commander : Buffalo Chicken Wrap nombre commander : 1 prix payer :5
+nom et prenom :bedrouni samir, email :samirb80440@gmail.com, telephone :0622196007, adresse du client :35 rue Jules Verne 80440 Amiens
+, date et heure de la commande :12/07/2024 08-07-22 plat commander : Buffalo Chicken Wrap nombre commander : 1 prix payer :5
+nom et prenom :bedrouni samir, email :samirb80440@gmail.com, telephone :0622196007, adresse du client :35 rue Jules Verne 80440 Amiens
+, date et heure de la commande :12/07/2024 08-07-42 plat commander : Buffalo Chicken Wrap nombre commander : 1 prix payer :5
+nom et prenom :bedrouni samir, email :samirb80440@gmail.com, telephone :0622196007, adresse du client :35 rue Jules Verne 80440 Amiens
+, date et heure de la commande :12/07/2024 08-07-22 plat commander : Buffalo Chicken Wrap nombre commander : 1 prix payer :5
+nom et prenom :bedrouni samir, email :samirb80440@gmail.com, telephone :0622196007, adresse du client :35 rue Jules Verne 80440 Amiens
+, date et heure de la commande :12/07/2024 09-07-21 plat commander : Buffalo Chicken Wrap nombre commander : 1 prix payer :5
