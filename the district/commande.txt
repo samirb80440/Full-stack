@@ -1,3 +1,0 @@
-
-nom et prenom :, email :, telephone :, adresse du client :, date et heure de la commande :12/07/2024 09-07-30 plat commander :  nombre commander :  prix payer :0
-nom et prenom :bedrouni samir, email :samirb80440@gmail.com, telephone :0622196007, adresse du client :555454, date et heure de la commande :12/07/2024 09-07-51 plat commander : Lasagnes nombre commander : 3 prix payer :36
