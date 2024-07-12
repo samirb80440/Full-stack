@@ -11,8 +11,8 @@
                         
                         <div id="insertcommande" class="d-flex justify-content-center">
 
-        <div class="card mb-3" style="max-width: 540px;">
-        <div class="row g-0">
+         <div class="card mb-3" style="max-width: 540px;">
+         <div class="row g-0">
             <div class="col-md-4">
             <img src="assets/images_the_district/food/<?= $plat['image'] ?>" class="img-fluid rounded-start" alt="<?= $plat['name'] ?>">
             </div>
@@ -33,8 +33,8 @@
                           <input type="hidden" name="stock" value="<?= $plat['id'] ?>" >
             </div>
             </div>
-        </div>
-        </div>
+         </div>
+         </div>
                     </div>
                         
                       
@@ -67,7 +67,8 @@
                         </div>
                     </div>
             </form>
-            </div>
+         </div>
+</div>
     <?php require_once('footer.php') ?>
   
     <script src="assets/Js/commande1.js"></script>
