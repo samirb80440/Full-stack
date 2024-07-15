@@ -230,15 +230,4 @@ function select_plat($sel_cat){
         echo 'Erreur lors de l\'exécution de la requête : ' . $e->getMessage();
     }
 }
-
-
-
-
-
-
-
-
-
-
-
 ?>
