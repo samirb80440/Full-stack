@@ -84,5 +84,4 @@ require_once('footer.php')?>
 </div>
 <script src="assets/Js/redirection.js"></script>
 </body>
-
 </html>

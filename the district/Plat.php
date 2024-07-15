@@ -91,8 +91,6 @@ require_once('header.php')
         </div>
     </div>
     <?php require_once('footer.php') ?>
-    <script src="assets/Js/carouselplat1.js"></script>
-   
+    <script src="assets/Js/carouselplat1.js"></script>  
 </body>
-
 </html>

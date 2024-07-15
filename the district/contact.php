@@ -40,5 +40,4 @@
     <?php require_once('footer.php') ?>
     <script src="assets/Js/contact.js"></script>
 </body>
-
 </html>
