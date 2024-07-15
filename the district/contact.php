@@ -1,8 +1,6 @@
 <?php 
     require_once('header.php')
     ?>
-    <div id="insertbgimg">
-        <div id="insertcommande"></div>
         <form id="form" action="contactscript.php" method="post">
             <div class="container mt-3">
                 <div class="row mb-3">
@@ -39,9 +37,7 @@
                 </div>
             </div>
         </form>
-    </div>
     <?php require_once('footer.php') ?>
-    
     <script src="assets/Js/contact.js"></script>
 </body>
 
