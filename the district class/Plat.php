@@ -78,7 +78,7 @@ require('class/DAO.php');
             <button class="btn btn-succes color-B09595 rounded-pill col-3" type="button" id="suivant"> suivant</button>
         </div>
     </div>
-    <?php require_once('footer.php') ?>
+    <?php require_once('footer.php');?>
     <script src="assets/Js/carouselplat1.js"></script>  
 </body>
 </html>

@@ -1,5 +1,5 @@
 <?php 
-    require_once('header.php')
+    require_once('header.php');
     ?>
         <form id="form" action="contactscript.php" method="post">
             <div class="container mt-3">
@@ -37,7 +37,7 @@
                 </div>
             </div>
         </form>
-    <?php require_once('footer.php') ?>
+    <?php require_once('footer.php'); ?>
     <script src="assets/Js/contact.js"></script>
 </body>
 </html>
