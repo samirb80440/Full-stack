@@ -1,41 +1,29 @@
 <?php 
-// Inclusion du fichier header.php
-require_once('header.php')
+require_once('header.php');
+require('class/DAO.php');
 ?>
-   
-<!-- Div contenant le titre "Tout Les Plats :" -->
 <div id="Titre" class="container">
-    <div class="fs-1 ms-md-4">Tout Les Plats :</div>
+    <div class="fs-1 ms-md-4 titre">Tout Les Plats :</div>
+<!-- Div contenant le titre "Tout Les Plats :" -->
 </div>
 <!-- Div contenant les plats -->
 <div id="checkplathtml" class="row justify-content-center">
     <?php
     // Vérification si le paramètre numcat est défini dans l'URL
-    if(isset($_GET['numcat'])){
-        // Préparation de la requête SQL pour récupérer les plats d'une catégorie spécifique
-        $stmt = $conn->prepare("SELECT plat.libelle AS platnom, plat.image, plat.description, categorie.libelle AS catnom ,plat.id ,id_categorie
-                              FROM plat LEFT JOIN categorie on plat.id_categorie = categorie.id
-                                                   WHERE id_categorie = :id
-                                                          ORDER BY categorie.libelle DESC");
-        // Liaison du paramètre :id avec la valeur de $_GET['numcat']
-        $stmt->bindParam(':id' , $_GET['numcat']);
-    } else {
-        // Préparation de la requête SQL pour récupérer tous les plats
-        $stmt = $conn->prepare("SELECT plat.libelle AS platnom, plat.image, plat.description, categorie.libelle AS catnom ,plat.id
-                              FROM plat LEFT JOIN categorie on plat.id_categorie = categorie.id
-                                                          ORDER BY categorie.libelle DESC");
-    }
+    $p = new requete();
+    $p->setConnection($servername,$dbname,$username,$password);
     
-    try {
-        // Exécution de la requête SQL
-        $stmt->execute();
-    } catch (PDOException $e) {
-        // Affichage d'un message d'erreur si la requête échoue
-        echo 'Erreur lors de l\'exécution de la requête : ' . $e->getMessage();
-    }
+              if(isset($_GET['numcat'])){
     
-    // Récupération des résultats de la requête
-    $result = $stmt->fetchAll();
+                $stocknum = intval($_GET['numcat']); 
+                $p->setSelectcondition('plat',$stocknum);
+              
+              } else {
+                $p->setSelectcondition('plat','toutlesplat');
+                                                              }
+    
+    $result = $p->getSelectall('all');
+    unset($p);
     
     // Initialisation des variables $stock et $i
     $stock == 'null';

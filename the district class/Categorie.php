@@ -1,22 +1,14 @@
 <?php 
-// Inclusion du fichier header.php
-require_once('header.php')
+require_once('header.php');
+require('class/DAO.php');
+ $p = new requete();
+ $p->setConnection($servername,$dbname,$username,$password);
+ $p->setSelectall('categorie');
+ $result = $p->getSelectall('all');
+unset($p);
 ?>
 
 <?php
-// Préparation de la requête SQL pour récupérer les catégories actives
-$stmt = $conn->prepare("SELECT * FROM categorie WHERE active ='Yes'");
-
-try {
-    // Exécution de la requête SQL
-    $stmt->execute();
-} catch (PDOException $e) {
-    // Affichage d'un message d'erreur si la requête échoue
-    echo 'Erreur lors de l\'exécution de la requête : ' . $e->getMessage();
-}
-
-// Récupération des résultats de la requête
-$result = $stmt->fetchAll();
 
 // Initialisation d'un compteur pour les catégories
 $i = 1;

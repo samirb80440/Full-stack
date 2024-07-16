@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <?php
 session_start();
-require_once('DAO.php');
+
 
 $servername = "localhost";
 $username = "admin";

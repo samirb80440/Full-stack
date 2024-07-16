@@ -1,12 +1,15 @@
 <?php 
-// Inclusion du fichier header.php
 require_once('header.php');
-    
-// Préparation de la requête SQL pour récupérer le plat sélectionné
-$stmt = $conn->prepare('SELECT * FROM plat WHERE id = :id;');
-$stmt->execute(array(':id' => $_GET['platcom']));
-$plat = $stmt->fetch();
+require('class/DAO.php');
+
+  $p = new requete();
+  $p->setConnection($servername,$dbname,$username,$password);
+  $id = intval($_GET['platcom']);
+  $p->setSelectone('plat',$id);
+  $plat = $p->getSelectall('one');
+ unset($p);
 ?>
+
 <!-- Div contenant le formulaire de commande -->
 <div id="insertbgimg" class="mt-5">
     <form id="form" action="commandescript.php" method="POST" class="container mt-3">

@@ -1,21 +1,12 @@
 <?php 
 require_once('header.php');
-    
-// Préparation de la requête SQL pour récupérer les catégories actives
-$stmt = $conn->prepare("SELECT * FROM categorie WHERE active='Yes'");
-
-try {
-    // Exécution de la requête SQL
-    $stmt->execute();
-} catch (PDOException $e) {
-    // Affichage d'un message d'erreur si la requête échoue
-    echo 'Erreur lors de l\'exécution de la requête : '. $e->getMessage();
-}
-
-// Récupération des résultats de la requête
-$result = $stmt->fetchAll();
-    
-?>
+require('class/DAO.php');
+$p = new requete();
+$p->setConnection($servername,$dbname,$username,$password);
+$p->setSelectall('categorie');
+$req = $p->getSelectall('all');
+unset($p);
+?>   
 
 <!-- Div contenant les catégories favorites -->
 <div class="parallaxe">
@@ -26,7 +17,7 @@ $result = $stmt->fetchAll();
             <?php
             // Boucle pour afficher les 6 premières catégories
             $i = 0;
-            foreach($result as $category){
+            foreach($req as $category){
                 echo '<div class="col-12 col-sm-6 col-lg-4 mt-3"">
                       <a  href="Categorie.php">
                             <img src="assets/images_the_district/category/'.$category['image'].'" class="imageanime imagecat img-fluid" alt="'.$category['libelle'].'">
@@ -45,22 +36,16 @@ $result = $stmt->fetchAll();
             <div class="fs-1 ms-md-5 red">Nos plats star :</div>
 
             <?php 
-            // Préparation de la requête SQL pour récupérer les plats les plus vendus
-            $stmt = $conn->prepare("SELECT p.id,p.id_categorie,c.id_plat,SUM(quantite) as quantite_vendue,SUM(quantite)*prix as rentabilite,p.libelle,p.description,p.prix,p.image FROM commande c LEFT JOIN plat p ON c.id_plat =p.id WHERE c.etat!= 'Annulée'  GROUP BY c.id_plat ORDER BY rentabilite DESC;");
+        unset($req);
+        $pd = new requete();
+        $pd->setConnection($servername,$dbname,$username,$password);
+        $pd->setSelectcondition('plat','plusvendue');
+        $req = $pd->getSelectall('all');
+        unset($pd);
 
-            try {
-                // Exécution de la requête SQL
-                $stmt->execute();
-            } catch (PDOException $e) {
-                // Affichage d'un message d'erreur si la requête échoue
-                echo 'Erreur lors de l\'exécution de la requête : '. $e->getMessage();
-            }
-
-            // Récupération des résultats de la requête
-            $result = $stmt->fetchAll();
 
             $i = 0;    
-            foreach($result as $plat){
+            foreach($req as $plat){
                 echo '<div class="col-12 col-sm-6 col-lg-4 mt-3"">
                        <a  href="/commande.php?platcom='.$plat['id'].'">
                                 <img src="assets/images_the_district/food/'.$plat["image"].'" class="imageanime imageplat img-fluid" alt="'.$plat["libelle"].'">
@@ -73,6 +58,7 @@ $result = $stmt->fetchAll();
                     break;
                 };
             };
+            unset($req)
            ?>
         </div>
     </div>
