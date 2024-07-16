@@ -212,7 +212,6 @@ class Ajoutcommande extends requete
 
 
 
-}
 
 
 
@@ -243,4 +242,4 @@ class Ajoutcommande extends requete
 
 
 
-?>
+
