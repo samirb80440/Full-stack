@@ -41,7 +41,9 @@ body {
     border-radius: 16%;
 }
 
-
+.titre{
+    color: crimson;
+}
 
 .texte{
     color:#000

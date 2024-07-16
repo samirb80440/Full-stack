@@ -5,7 +5,7 @@ require_once('header.php')
    
 <!-- Div contenant le titre "Tout Les Plats :" -->
 <div id="Titre" class="container">
-    <div class="fs-1 ms-md-4">Tout Les Plats :</div>
+    <div class="fs-1 ms-md-4 titre">Tout Les Plats :</div>
 </div>
 <!-- Div contenant les plats -->
 <div id="checkplathtml" class="row justify-content-center">
