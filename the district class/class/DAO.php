@@ -1,6 +1,5 @@
 <?php
 
-
 class requete
 {
     // Propriétés de la classe
