@@ -49,8 +49,6 @@
     </div>
   </nav>
 </footer>
-
-
 <!-- Inclusion de feuille de style CSS en fonction de la page actuelle -->
 <?php
 if ($_SERVER['REQUEST_URI'] == "/commande.php?platcom=". $_GET['platcom']) {
