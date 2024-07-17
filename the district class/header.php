@@ -35,6 +35,7 @@ $cssFiles = array(
     '/commande.php' => 'commande.css',
     '/contact.php' => 'contact.css',
     '/commandescript.php'=>'commandescript.css',
+    '/mention.php'=>'contact.css',
     // Ajoutez d'autres associations ici
 );
 
