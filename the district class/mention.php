@@ -47,7 +47,7 @@
 <br>Libertés" du 6 janvier 1978 modifiée, vous disposez d'un droit d'accès, de rectification et de 
 <br>suppression des données vous concernant. Vous pouvez exercer ce droit en nous contactant 
 <br>à l'adresse suivante : *****@gmail.com.</p>
-<p class="fs-3 text-center fw-bolder">Cookies :</p>
+<p class="fs-3 text-center fw-bolder" id="conf">Cookies :</p>
 <p class="text-break font-monospace fs-4 text-center fw-medium">
 Le site The District peut-être amené à vous demander l’acceptation des cookies pour des
 <br>besoins de statistiques et d’affichage. Un cookie est une information déposée sur votre disque dur
