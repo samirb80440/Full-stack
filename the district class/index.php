@@ -28,7 +28,7 @@ unset($p);
             $i = 0;
             foreach($req as $category){
                 echo '<div class="col-12 col-sm-6 col-lg-4 mt-3">
-                      <a href="Categorie.php">
+                     <a  href="/Plat.php?numcat='.$category['id'].'">
                             <img src="assets/images_the_district/category/'.$category['image'].'" class="imageanime imagecat img-fluid" alt="'.$category['libelle'].'">
                             <div class="card-body">
                             </div>

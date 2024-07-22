@@ -2,28 +2,34 @@
 require_once('header.php');
 require('class/DAO.php');
 ?>
+<?php
+$p = new requete();
+$p->setConnection($servername,$dbname,$username,$password);
+
+if(isset($_GET['numcat'])){
+  
+  $stocknum = intval($_GET['numcat']); 
+  $p->setSelectcondition('plat',$stocknum);
+  $cat = new requete();
+  $cat->setConnection($servername,$dbname,$username,$password);
+  $cat->setSelectone('categorie',$stocknum);
+  $resultcat = $cat->getSelectall('one');
+  unset($cat);
+  
+} else {
+  $p->setSelectcondition('plat','toutlesplat');
+}
+
+$result = $p->getSelectall('all');
+unset($p);
+?>
+
 <div id="Titre" class="container">
-    <div class="fs-1 md-4 titre my-5">Tous Les Plats :</div>
-<!-- Div contenant le titre "Tout Les Plats :" -->
+    <div class="fs-1 ms-md-4"><?php if(isset($resultcat)){echo 'Tous Les '.$resultcat['libelle'].'s';} else {echo 'Tous Les Plats';}?> :</div>
 </div>
-<!-- Div contenant les plats -->
-<div id="checkplathtml" class="row justify-content-center">
-    <?php
-    // Vérification si le paramètre numcat est défini dans l'URL
-    $p = new requete();
-    $p->setConnection($servername,$dbname,$username,$password);
-    
-              if(isset($_GET['numcat'])){
-    
-                $stocknum = intval($_GET['numcat']); 
-                $p->setSelectcondition('plat',$stocknum);
-              
-              } else {
-                $p->setSelectcondition('plat','toutlesplat');
-                                                              }
-    
-    $result = $p->getSelectall('all');
-    unset($p);
+<div id="checkplathtml" class="g-0 p-0 row justify-content-center">
+
+<?php
     
     // Initialisation des variables $stock et $i
     $stock == 'null';
@@ -71,7 +77,7 @@ require('class/DAO.php');
 </div> 
 </div>
 
-<div id="boutonarmy" class="container">
+<div id="boutonarmy" class="container <?php if($i<4) echo 'd-none';?>">
         <div class="row justify-content-between mt-3">
             <button class="btn btn-succes color-B09595 rounded-pill col-3" type="button"
                 id="precedent">précédent</button>

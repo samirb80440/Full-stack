@@ -17,12 +17,12 @@ foreach($result as $category){
     if($i==1){
         echo '<div id="page1">
         <div class="container"> 
-                <div class="fs-1 texte ms-md-4 red">Toute les catégories :</div><br>
+                <div class="fs-1 texte ms-md-4 red">Toutes les catégories :</div><br>
                   <div class="row justify-content-between mt-3">';
     } elseif($i==7) {
         echo '<div id="page2">
         <div class="container"> 
-                <div class="fs-1 texte ms-md-4 red ">Toute les catégories :</div><br>
+                <div class="fs-1 texte ms-md-4 red ">Toutes les catégories :</div><br>
                   <div class="row justify-content-between mt-3">';
     };
     
