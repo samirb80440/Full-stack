@@ -145,4 +145,8 @@ p {
     .imageplat {
         width: 100vw;
     }
+    #video {
+     display: none;
+    }
+    
 }
