@@ -1,6 +1,8 @@
 <?php
 require_once("header.php");
 require('class/DAO.php');
+require_once 'class/mail.php';
+
 
 $p = new requete();
 $p->setConnection($servername, $dbname, $username, $password);
@@ -14,6 +16,11 @@ $infoscommande = "nom et prenom :" . $_REQUEST['nomprenom'] . ", email :" . $_RE
 
 // Afficher un message indiquant que la livraison est estimée à 30 minutes
 echo '<div class="row justify-content-center couleur body ">la livraison de votre commande est estimée à ' . date('H:i:s', strtotime('+30 minutes', strtotime(date('H:i:s')))) . " - elle sera livrée au nom de " . $_REQUEST["nomprenom"] . " à l'adresse " . $_REQUEST["adresse"] . '</div>';
+
+
+$textmail = 'votre commande de '.$_REQUEST['quantite'].' '.$commande['libelle'].' au nom de '.$_REQUEST['nomprenom'].' est en preparation elle sera livrée a l\'adresse '.$_REQUEST['adresse'];
+//appel de la fonction pour envoyer un mail
+envoiemail($textmail,$_REQUEST['email'],$_REQUEST['nomprenom']);
 
 // Ouvrir le fichier commande.txt en mode écriture seule
 $fp = fopen("commande.txt", "a");
