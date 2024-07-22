@@ -3,7 +3,7 @@ require_once('header.php');
 require('class/DAO.php');
 ?>
 <div id="Titre" class="container">
-    <div class="fs-1 ms-md-4 titre">Tout Les Plats :</div>
+    <div class="fs-1 md-4 titre my-5">Tous Les Plats :</div>
 <!-- Div contenant le titre "Tout Les Plats :" -->
 </div>
 <!-- Div contenant les plats -->
