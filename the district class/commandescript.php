@@ -13,9 +13,9 @@ require_once 'class/mail.php';
  // $date = date("Y-m-d H:m:s-0000");
 $dateliv = date('H:i:s', strtotime('+30 minutes', strtotime(date('H:i:s'))));
 
-// calcule de la somme a regler
-$total = $commande['prix'] * $_REQUEST['quantite'];
-  // Récupérer les données du plat
+    // calcule de la somme a regler
+    $total = $commande['prix'] * $_REQUEST['quantite'];
+    // Récupérer les données du plat
  
 
   // Créer une chaîne de caractères contenant les informations de la commande
@@ -26,7 +26,7 @@ $total = $commande['prix'] * $_REQUEST['quantite'];
   echo '<div class="row justify-content-center couleur body ">la livraison de votre commande est estimer a  '.date('H:i:s', strtotime('+30 minutes', strtotime(date('H:i:s'))))." elle sera livrer au nom de ".$_REQUEST["nomprenom"]." a l'adresse ".$_REQUEST["adresse"]."</div>";
 
   //appel de la fonction pour envoyer un mail
-envoiemail($_REQUEST['adresse'],$_REQUEST['email'],$_REQUEST['nomprenom'],$_REQUEST['quantite'],$total,$commande['libelle'],$dateliv);
+    envoiemail($_REQUEST['adresse'],$_REQUEST['email'],$_REQUEST['nomprenom'],$_REQUEST['quantite'],$total,$commande['libelle'],$dateliv);
   // Ouvrir le fichier commande.txt en mode écriture seule
   $fp = fopen("commande.txt", "a"); 
 
