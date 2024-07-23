@@ -19,7 +19,7 @@ unset($p);
 
 <!-- Div contenant les catégories favorites -->
 <div class="parallaxe">
-    <div class="fs-1  col-12 md-5 red">Les Catégories Favorites :</div>
+    <div class="fs-1  ms-md-5 red">Les Catégories Favorites :</div>
     <div class="mid2 container my-5">
         <div class="row justify-content-center mt-3">
             
