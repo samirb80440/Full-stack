@@ -78,7 +78,6 @@ require('class/DAO.php');
 <?php 
 // Inclusion du fichier footer.php
 require_once('footer.php'); ?>
-  
 <script src="assets/Js/commande1.js"></script>
 </body>
 </html>
