@@ -64,8 +64,6 @@ foreach($result as $category){
 <?php 
 // Inclusion du fichier footer.php
 require_once('footer.php') ?>
-   
-<script src="assets/Js/redirection.js"></script>
 <script src="assets/Js/carouselcategorie.js"></script>
 </body>
 
