@@ -27,7 +27,7 @@ require('class/DAO.php');
                                 <!-- Titre et description du plat -->
                                 <h5 class="card-title"><?= $plat['name'] ?></h5>
                                 <p class="card-text color"><?= $plat['description'] ?></p>
-                                <p class="card-text color"><small class="text-body-secondary"><?= $plat['prix']?> euros</small></p>
+                                <p class="card-text color"><small class="text-body-secondary"><?= $plat['prix']?> €</small></p>
                                 <!-- Sélection de la quantité -->
                                 <div class="col-3" id="ChoixQuantité">
                                     <label for="quantite" class="labelt form-label">Quantité</label>

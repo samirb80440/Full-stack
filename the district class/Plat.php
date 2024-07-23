@@ -24,8 +24,8 @@ $result = $p->getSelectall('all');
 unset($p);
 ?>
 
-<div id="Titre" class="container">
-    <div class="fs-1 ms-md-4"><?php if(isset($resultcat)){echo 'Tous Les '.$resultcat['libelle'].'s';} else {echo 'Tous Les Plats';}?> :</div>
+<div class="container">
+    <div class="fs-1 ms-md-4 titre"><?php if(isset($resultcat)){echo 'Tous Les '.$resultcat['libelle'].'s';} else {echo 'Tous Les Plats';}?> :</div>
 </div>
 <div id="checkplathtml" class="g-0 p-0 row justify-content-center">
 
@@ -56,6 +56,7 @@ unset($p);
               <div class="card-body">
                 <h5 class="card-title mt-md-4">'.$plat['platnom'].'</h5>
                 <p class="card-text texte">"'.$plat['description'].'"</p>
+                <p class="card-text texte">Prix: '.$plat['prix'].' €</p>
                 <div class="d-flex justify-content-end">
                   <button type="submit" class="btn btn-light" name="platcom" value="'.$plat['id'].'">Commander</button>
                 </div>
