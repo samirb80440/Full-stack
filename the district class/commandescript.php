@@ -10,8 +10,8 @@ require_once 'class/mail.php';
   $commande = $p->getSelectall('one');
  unset($p);
  
- // $date = date("Y-m-d H:m:s-0000");
-$dateliv = date('H:i:s', strtotime('+30 minutes', strtotime(date('H:i:s'))));
+  // $date = date("Y-m-d H:m:s-0000");
+  $dateliv = date('H:i:s', strtotime('+30 minutes', strtotime(date('H:i:s'))));
 
     // calcule de la somme a regler
     $total = $commande['prix'] * $_REQUEST['quantite'];
@@ -35,6 +35,13 @@ $dateliv = date('H:i:s', strtotime('+30 minutes', strtotime(date('H:i:s'))));
 
   // Fermer le fichier
   fclose($fp);
+
+
+
+  //ajoute la commande avec les infos dans la table commande
+  $ajout = new Ajoutcommande($commande['id'],$_REQUEST['quantite'],$total,'En préparation',$_REQUEST['nomprenom'],$_REQUEST['tel'],$_REQUEST['email'],$_REQUEST['adresse']);
+  $ajout->setConnection($servername,$dbname,$username,$password);
+  $ajout->setAjout();
 ?>
 
 <!-- Ajouter un tag meta pour rediriger vers index.php après 30 secondes -->

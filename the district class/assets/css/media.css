@@ -71,7 +71,7 @@ body {
 }
 
 #navbot {
-    margin-right: 40vw;
+    margin-right: 41vw;
     width: 22vw;
 }
 
@@ -85,7 +85,7 @@ p {
 }
 
 .red{
-    color: crimson;
+    color: rgb(255, 0, 0);
 }
 
 
@@ -134,7 +134,7 @@ p {
 
 @media screen and (max-width: 768px) {
     #navbot {
-        margin-left: 0vw;
+     
         width: 100vw;
     }
 
@@ -148,5 +148,6 @@ p {
     #video {
      display: none;
     }
+    
     
 }

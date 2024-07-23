@@ -1,10 +1,10 @@
 <footer>
   <!-- Navigation du pied de page -->
-  <nav id="navbot" class="navbar navbar-expand bg-danger navbar-dark mt-3 container d-flex rounded-pill   justify-content-center">
+  <nav id="navbot" class="navbar navbar-expand bg-danger  mt-3 container d-flex rounded-pill   col-lg-12 justify-content-center">
     <!-- Contenu de la navigation -->
     <div class="collapse navbar-collapse justify-content-center row" id="collapsibleNavbar2">
       <!-- Liste des éléments de navigation -->
-      <ul class="navbar-nav d-flex flex-wrap justify-content-center">
+      <ul class="navbar-nav d-flex flex-wrap  justify-content-center">
         <!-- Élément de navigation : Accueil -->
         <li class="nav-item">
           <a class="nav-link active" href="#" title="Accueil">

@@ -77,7 +77,7 @@ unset($p);
   </div> 
   </div>
 
-  <div id="boutonarmy" class="container <?php if($i<4) echo 'd-none';?>">
+  <div id="boutonarmy" class="container <?php if($i<=4) echo 'd-none';?>">
         <div class="row justify-content-between mt-3">
             <button class="btn btn-succes color-B09595 rounded-pill col-3" type="button"
                 id="precedent">précédent</button>

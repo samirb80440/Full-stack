@@ -71,7 +71,6 @@ body {
 }
 
 #navbot {
-    margin-right: 40vw;
     width: 22vw;
 }
 button {
@@ -115,7 +114,6 @@ p {
 
 @media screen and (max-width: 926px) {
     #navbot {
-        margin-left: 0vw;
         width: 100vw;
     }
 

@@ -121,7 +121,6 @@ button {
 
 @media screen and (max-width: 768px) {
     #navbot {
-        margin-left: 0vw;
         width: 100vw;
     }
 
