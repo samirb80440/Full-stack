@@ -7,35 +7,35 @@
       <ul class="navbar-nav d-flex flex-wrap  justify-content-center">
         <!-- Élément de navigation : Accueil -->
         <li class="nav-item">
-          <a class="nav-link active" href="#" title="Accueil">
+          <a class="nav-link active" href="https://www.facebook.com/?locale=fr_FR" title="Accueil">
             <!-- Image de l'icône Facebook -->
             <img src="assets/images_the_district/icons8-facebook-50.png" class="img-fluid align-text-top" alt="navinsta">
           </a>
         </li>
         <!-- Élément de navigation : Catégorie -->
         <li class="nav-item">
-          <a class="nav-link" href="#" title="Categorie">
+          <a class="nav-link" href="https://www.pinterest.fr/" title="Categorie">
             <!-- Image de l'icône Pinterest -->
             <img src="assets/images_the_district/icons8-pinterest-50.png" class="img-fluid d-inline-block align-text-top" alt="navfb">
           </a>
         </li>
         <!-- Élément de navigation : Plat -->
         <li class="nav-item">
-          <a class="nav-link" href="#" title="Plat">
+          <a class="nav-link" href="https://www.snapchat.com/fr-FR" title="Plat">
             <!-- Image de l'icône Snapchat -->
             <img src="assets/images_the_district/icons8-snapchat-circled-logo-50.png" class="img-fluid d-inline-block align-text-top" alt="navtt">
           </a>
         </li>
         <!-- Élément de navigation : Contact -->
         <li class="nav-item">
-          <a class="nav-link" href="#" title="contact">
+          <a class="nav-link" href="https://x.com/?lang=fr" title="contact">
             <!-- Image de l'icône Twitter -->
             <img src="assets/images_the_district/icons8-twitter-50.png" class="img-fluid d-inline-block align-text-top" alt="navx">
           </a>
         </li>
         <!-- Élément de navigation : Contact -->
         <li class="nav-item">
-          <a class="nav-link" href="#" title="contact">
+          <a class="nav-link" href="https://www.instagram.com/" title="contact">
             <!-- Image de l'icône Instagram -->
             <img src="assets/images_the_district/icons8-instagram-50.png" class="img-fluid d-inline-block align-text-top" alt="navyt">
           </a>
