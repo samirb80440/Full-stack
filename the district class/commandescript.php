@@ -28,7 +28,7 @@ require_once 'class/mail.php';
   //appel de la fonction pour envoyer un mail
     envoiemail($_REQUEST['adresse'],$_REQUEST['email'],$_REQUEST['nomprenom'],$_REQUEST['quantite'],$total,$commande['libelle'],$dateliv);
   // Ouvrir le fichier commande.txt en mode écriture seule
-  $fp = fopen("commande.txt", "a"); 
+  $fp = fopen("assets/text/commande.txt", "a"); 
 
   // Écrire les informations de la commande dans le fichier
   fputs($fp, $infoscommande); 
