@@ -52,7 +52,7 @@ unset($p);
         
         // Affichage d'une carte pour chaque plat
         echo '<div class=" card col-4 flex-row mt-3 mx-md-5 " style="width: 35rem;">
-                <img src="assets/images_the_district/food/'.$plat['image'].'" class="rounded-3 img-fluid m-auto" alt="'.$plat['platnom'].'food" style="width: 10rem; height: fit-content;">
+                <img src="assets/images_the_district/food/'.$plat['image'].'" class="rounded-3 img-fluid m-auto" alt="'.$plat['platnom'].'food" style="width: 15rem; height: fit-content;">
               <div class="card-body">
                 <h5 class="card-title mt-md-4">'.$plat['platnom'].'</h5>
                 <p class="card-text texte">"'.$plat['description'].'"</p>
