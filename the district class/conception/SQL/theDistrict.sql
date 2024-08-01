@@ -67,7 +67,7 @@ CREATE TABLE `utilisateur` (
 
 
 
--- Données pour la table Catégorie
+-- Données pour la table catégorie
 INSERT INTO categorie (id, libelle, image, active) VALUES
 ("4","Pizza","pizza_cat.jpg","Yes"),
 ("5","Burger","burger_cat.jpg","Yes"),
@@ -80,7 +80,7 @@ INSERT INTO categorie (id, libelle, image, active) VALUES
 
 
 
-
+-- Données pour la table plat
 INSERT INTO plat (id,libelle,description,prix,image,id_categorie,active) VALUES
 ("4","District Burger","Burger composé d’un bun’s du boulanger, deux steaks de 80g (origine française), de deux tranches poitrine de porc fumée, de deux tranches cheddar affiné, salade et oignons confits. .","8.00","hamburger.jpg","5","Yes"),
 ("5","Pizza Bianca","Une pizza fine et croustillante garnie de crème mascarpone légèrement citronnée et de tranches de saumon fumé, le tout relevé de baies roses et de basilic frais.","14.00","pizza-salmon.png","4","Yes"),
@@ -97,7 +97,7 @@ INSERT INTO plat (id,libelle,description,prix,image,id_categorie,active) VALUES
 
 
 
-
+-- Données pour la table commande
 INSERT INTO commande (id,id_plat,quantite,total,date_commande,etat,nom_client,telephone_client,email_client,adresse_client) VALUES
 ("2",4,"4","16.00","2020-11-30 03:52:43","Livrée","Kelly Dillard","7896547800","kelly@gmail.com","308 Post Avenue"),
 ("3",5,"2","20.00","2020-11-30 04:07:17","Livrée","Thomas Gilchrist","7410001450","thom@gmail.com","1277 Sunburst Drive"),
