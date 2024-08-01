@@ -13,7 +13,7 @@ $dateheure = date("H:m");
 
 //texte a inserer dans le mail 
 //le \n ne fonctionne pas mais les br fonctionne
-$texte  =  "Objet : Confirmation de votre commande<br>
+$texte =  "Objet : Confirmation de votre commande<br>
 <br>
     Chère/Cher ".$nomclient.",<br>
     <br>
