@@ -9,7 +9,7 @@ function envoiemail($adresse,$emailclient,$nomclient,$quantité,$total,$produit,
 
 //set date jour et heure
 $datejour = date("d-m-Y");
-$dateheure = date("H:m");
+$dateheure = date("H:i");
 
 //texte a inserer dans le mail 
 //le \n ne fonctionne pas mais les br fonctionne
